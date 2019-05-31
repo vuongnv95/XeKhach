@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/toast_layout_root"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/margin_30dp"
+              android:gravity="center_horizontal"
+              android:background="@drawable/toast_custom">
+
+    <ImageView android:id="@+id/img"
+               android:src="@drawable/ic_done_white_24dp"
+               android:adjustViewBounds="true"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/_dp44"
+               android:layout_marginBottom="@dimen/margin_10dp"/>
+
+    <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:gravity="center"
+            android:text="@string/error_network"
+            android:textColor="#FFF"
+            android:textSize="@dimen/text_size16"
+            android:textStyle="bold"/>
+
+    <TextView android:id="@+id/tvContent"
+              android:text="@string/no_network"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+              android:textColor="#FFF"
+              android:textSize="@dimen/text_size16"
+              android:textStyle="normal"/>
+
+</LinearLayout>

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">XeKhach</string>
+    <string name="find_coach">Tìm xe</string>
+    <string name="wait_coach">Chờ xe</string>
+    <string name="history_coach">Lịch sử</string>
+    <string name="info_coach">Thông tin</string>
+    <string name="error_network">Kết nối có vấn đề</string>
+    <string name="no_network">Không có kết nối mạng, vui lòng thử lại!</string>
+    <string name="dia_diem_di">Chọn địa điểm đi</string>
+    <string name="dia_diem_den">Chọn địa điểm đến</string>
+    <string name="tim_xe">Tìm xe</string>
+    <string name="nhap_ten">Nhập tên tỉnh, thành phố</string>
+    <string name="nhap_ten_thanh_pho">Nhập tên tỉnh, thành phố</string>
+    <string name="nha_ten_quan">Nhập tên quận, huyện</string>
+    <string name="hom_nay">Hôm nay</string>
+
 </resources>

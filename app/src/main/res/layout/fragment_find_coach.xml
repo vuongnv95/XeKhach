@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:clickable="true"
+                                             android:layout_height="match_parent">
+    <include layout="@layout/layout_header" android:layout_width="match_parent" android:id="@+id/header"
+             android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent" android:orientation="horizontal"
+                  android:background="@drawable/bg_search"
+                  android:id="@+id/dia_diem_di_rl"
+                  android:padding="@dimen/_dp8"
+                  android:layout_marginLeft="@dimen/_dp16"
+                  android:layout_marginRight="@dimen/_dp16"
+                  app:layout_constraintStart_toEndOf="@id/swife_img"
+                  app:layout_constraintTop_toBottomOf="@id/header"
+                  android:layout_marginTop="32dp"
+                  android:gravity="center_vertical"
+                  android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/_dp24"
+                   android:src="@mipmap/ic_house"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="@string/dia_diem_di"
+                  android:textSize="@dimen/_16sp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               android:id="@+id/swife_img"
+               android:layout_marginLeft="@dimen/_dp8"
+               app:layout_constraintTop_toBottomOf="@+id/dia_diem_di_rl"
+               android:layout_marginTop="@dimen/_dp8"
+               android:src="@mipmap/ic_swife" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent" android:orientation="horizontal"
+                  android:background="@drawable/bg_search"
+                  android:id="@+id/dia_diem_den_rl"
+                  app:layout_constraintStart_toEndOf="@id/swife_img"
+                  android:padding="@dimen/_dp8"
+                  android:layout_marginLeft="@dimen/_dp16"
+                  android:layout_marginRight="@dimen/_dp16"
+                  app:layout_constraintTop_toBottomOf="@id/swife_img"
+                  android:layout_marginTop="@dimen/_dp8"
+                  android:gravity="center_vertical"
+                  android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/_dp24"
+                   android:src="@mipmap/ic_house"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="@string/dia_diem_den"
+                  android:textSize="@dimen/_16sp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:text="@string/hom_nay"
+              app:layout_constraintTop_toTopOf="@id/ngay_di_rl" app:layout_constraintBottom_toBottomOf="@id/ngay_di_rl"
+              android:gravity="center"
+              android:id="@+id/date_now_txt"
+              app:layout_constraintStart_toStartOf="@id/dia_diem_den_rl"
+              android:paddingLeft="@dimen/_dp8"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:background="@drawable/now_date_bg"
+              android:paddingRight="@dimen/_dp8"
+              android:layout_height="0dp"/>
+    <LinearLayout android:layout_width="wrap_content" android:orientation="horizontal"
+                  android:background="@drawable/bg_search"
+                  android:id="@+id/ngay_di_rl"
+                  android:layout_marginLeft="@dimen/_dp8"
+                  app:layout_constraintStart_toEndOf="@id/date_now_txt"
+                  android:padding="@dimen/_dp8"
+                  android:layout_marginRight="@dimen/_dp16"
+                  app:layout_constraintTop_toBottomOf="@id/dia_diem_den_rl"
+                  android:layout_marginTop="@dimen/_dp8"
+                  android:gravity="center_vertical"
+                  android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/_dp24"
+                   android:src="@mipmap/ic_calendar"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/date_start_txt"
+                  android:text="14/05/2019"
+                  android:gravity="center_vertical"
+                  android:textSize="@dimen/_16sp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:orientation="horizontal"
+                  android:background="@drawable/bg_search"
+                  android:id="@+id/gio_di_rl"
+                  app:layout_constraintStart_toEndOf="@id/ngay_di_rl"
+                  android:layout_marginLeft="@dimen/_dp8"
+                  android:padding="@dimen/_dp8"
+                  android:layout_marginRight="@dimen/_dp16"
+                  app:layout_constraintTop_toBottomOf="@id/dia_diem_den_rl"
+                  android:layout_marginTop="@dimen/_dp8"
+                  android:gravity="center_vertical"
+                  android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/_dp24"
+                   android:src="@mipmap/ic_time"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="2:42 CH"
+                  android:id="@+id/time_start_txt"
+                  android:gravity="center_vertical"
+                  android:textSize="@dimen/_16sp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+    <Button android:layout_width="0dp"
+            android:id="@+id/tim_xe_btn"
+            android:background="@drawable/now_date_bg"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/gio_di_rl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="@dimen/_dp24"
+            android:layout_marginRight="@dimen/_dp24"
+            android:layout_marginTop="@dimen/_dp24"
+            android:text="@string/tim_xe"
+            android:layout_height="wrap_content"/>
+    <ImageView android:layout_width="match_parent" app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/tim_xe_btn"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:src="@mipmap/ic_bus" android:layout_height="wrap_content"/>
+</android.support.constraint.ConstraintLayout>

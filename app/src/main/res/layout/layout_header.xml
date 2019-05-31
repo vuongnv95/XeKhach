@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:background="@color/colorPrimaryDark"
+                                             android:layout_height="wrap_content">
+    <ImageView android:layout_width="wrap_content" android:id="@+id/back_img" android:layout_height="@dimen/_dp44"
+               android:paddingLeft="@dimen/_dp8"
+               app:layout_constraintStart_toStartOf="parent"
+               android:src="@drawable/ic_back_vector"/>
+    <TextView android:layout_width="wrap_content" android:text="Tìm xe" app:layout_constraintStart_toStartOf="parent"
+              android:id="@+id/title_txt"
+              app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+              android:textColor="@color/white"
+              android:textSize="@dimen/text_size16"
+              app:layout_constraintBottom_toBottomOf="parent" android:layout_height="wrap_content"/>
+</android.support.constraint.ConstraintLayout>
